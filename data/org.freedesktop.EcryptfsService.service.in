@@ -1,0 +1,7 @@
+[D-BUS Service]
+Name=org.freedesktop.EcryptfsService
+Exec=@ecryptfsserviceprivdir@/ecryptfsserviced
+User=root
+SystemdService=ecryptfsservice.service
+StandardOutput=syslog
+StandardError=syslog

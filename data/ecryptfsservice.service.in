@@ -1,0 +1,11 @@
+[Unit]
+Description=sercure box service
+
+[Service]
+Type=dbus
+BusName=org.freedesktop.EcryptfsService
+ExecStart=@ecryptfsserviceprivdir@/ecryptfsserviced
+KillSignal=SIGINT
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<node name="/">
+  <interface name="org.freedesktop.EcryptfsService.Base">
+    <method name="CreateSbox">
+      <arg name="arg0" type="s" />
+      <arg name="arg1" type="s" />
+      <arg name="ret" type="i" direction="out" />
+    </method>
+    <method name="OpenSbox">
+      <arg name="arg0" type="s" />
+      <arg name="arg1" type="s" />
+      <arg name="ret" type="i" direction="out" />
+    </method>
+    <method name="CloseSbox">
+      <arg name="arg0" type="s" />
+      <arg name="ret" type="i" direction="out" />
+    </method>
+    <method name="DeleteSbox">
+      <arg name="arg0" type="s" />
+      <arg name="arg1" type="s" />
+      <arg name="ret" type="i" direction="out" />
+    </method>
+  </interface>
+</node>
